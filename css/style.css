@@ -170,6 +170,13 @@ main {
   min-height: calc(100vh - 200px);
 }
 
+.form-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .form-container {
   background-color: var(--bg-color);
   padding: 2.5rem;
@@ -177,6 +184,7 @@ main {
   box-shadow: var(--shadow-lg);
   width: 100%;
   max-width: 500px;
+  margin: 0 auto;
 }
 
 .form-container h2 {
@@ -297,7 +305,6 @@ main {
   text-decoration: underline;
 }
 
-/* Contact Section */
 .contact-section {
   padding: 3rem 0;
 }

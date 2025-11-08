@@ -54,7 +54,6 @@ function initRegistrationValidation() {
     if (!emailRegex.test(email.trim())) {
       return 'Please enter a valid email address';
     }
-    // More strict email validation
     if (email.length > 255) {
       return 'Email address is too long';
     }
@@ -471,9 +470,7 @@ function initLoginValidation() {
     }
 
     if (!hasErrors) {
-      alert(
-        'Login successful!'
-      );
+      alert('Login successful!');
     } else {
       const firstErrorField = loginForm.querySelector('.error');
       if (firstErrorField) {
@@ -668,9 +665,7 @@ function initContactValidation() {
     }
 
     if (!hasErrors) {
-      alert(
-        'Thank you for your message! We will get back to you soon.'
-      );
+      alert('Thank you for your message! We will get back to you soon.');
       contactForm.reset();
       nameField.classList.remove('success');
       emailField.classList.remove('success');

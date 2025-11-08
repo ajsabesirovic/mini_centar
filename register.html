@@ -1,121 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - TechSolutions Inc.</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Center NIT</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="container">
-                <div class="logo">
-                    <h1>TechSolutions Inc.</h1>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html" class="active">Register</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="container">
+          <div class="logo">
+            <h1>Center NIT</h1>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html" class="active">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="form-section">
-            <div class="container">
-                <div class="form-container">
-                    <h2>Create Your Account</h2>
-                    <form id="registerForm" class="form">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input 
-                                type="text" 
-                                id="name" 
-                                name="name" 
-                                placeholder="Enter your full name"
-                            >
-                            <span class="error-message" id="nameError"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="registerEmail">Email Address</label>
-                            <input 
-                                type="email" 
-                                id="registerEmail" 
-                                name="email" 
-                                placeholder="Enter your email"
-                            >
-                            <span class="error-message" id="emailError"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="registerPassword">Password</label>
-                            <input 
-                                type="password" 
-                                id="registerPassword" 
-                                name="password" 
-                                placeholder="Enter your password"
-                            >
-                            <span class="error-message" id="passwordError"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="confirmPassword">Confirm Password</label>
-                            <input 
-                                type="password" 
-                                id="confirmPassword" 
-                                name="confirmPassword" 
-                                placeholder="Confirm your password"
-                            >
-                            <span class="error-message" id="confirmPasswordError"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="techLanguage">Tech Language to Learn</label>
-                            <select 
-                                id="techLanguage" 
-                                name="techLanguage"
-                            >
-                                <option value="">Select a language</option>
-                                <option value="python">Python</option>
-                                <option value="javascript">JavaScript</option>
-                                <option value="java">Java</option>
-                                <option value="csharp">C#</option>
-                                <option value="cpp">C++</option>
-                                <option value="php">PHP</option>
-                                <option value="ruby">Ruby</option>
-                                <option value="go">Go</option>
-                                <option value="rust">Rust</option>
-                                <option value="swift">Swift</option>
-                                <option value="kotlin">Kotlin</option>
-                                <option value="typescript">TypeScript</option>
-                                <option value="html-css">HTML/CSS</option>
-                                <option value="react">React</option>
-                                <option value="vue">Vue.js</option>
-                                <option value="angular">Angular</option>
-                                <option value="nodejs">Node.js</option>
-                                <option value="django">Django</option>
-                                <option value="flask">Flask</option>
-                                <option value="other">Other</option>
-                            </select>
-                            <span class="error-message" id="techLanguageError"></span>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Register</button>
-                        <p class="form-footer">
-                            Already have an account? <a href="login.html">Login here</a>
-                        </p>
-                    </form>
-                </div>
-            </div>
-        </section>
+      <section class="form-section">
+        <div class="container">
+          <div class="form-container">
+            <h2>Create Your Account</h2>
+            <form id="registerForm" class="form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your full name"
+                />
+                <span class="error-message" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="registerEmail">Email Address</label>
+                <input
+                  type="email"
+                  id="registerEmail"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+                <span class="error-message" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="registerPassword">Password</label>
+                <input
+                  type="password"
+                  id="registerPassword"
+                  name="password"
+                  placeholder="Enter your password"
+                />
+                <span class="error-message" id="passwordError"></span>
+              </div>
+              <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  placeholder="Confirm your password"
+                />
+                <span class="error-message" id="confirmPasswordError"></span>
+              </div>
+              <div class="form-group">
+                <label for="techLanguage">Tech Language to Learn</label>
+                <select id="techLanguage" name="techLanguage">
+                  <option value="">Select a language</option>
+                  <option value="python">Python</option>
+                  <option value="javascript">JavaScript</option>
+                  <option value="java">Java</option>
+                  <option value="csharp">C#</option>
+                  <option value="cpp">C++</option>
+                  <option value="php">PHP</option>
+                  <option value="ruby">Ruby</option>
+                  <option value="go">Go</option>
+                  <option value="rust">Rust</option>
+                  <option value="swift">Swift</option>
+                  <option value="kotlin">Kotlin</option>
+                  <option value="typescript">TypeScript</option>
+                  <option value="html-css">HTML/CSS</option>
+                  <option value="react">React</option>
+                  <option value="vue">Vue.js</option>
+                  <option value="angular">Angular</option>
+                  <option value="nodejs">Node.js</option>
+                  <option value="django">Django</option>
+                  <option value="flask">Flask</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="error-message" id="techLanguageError"></span>
+              </div>
+              <button type="submit" class="btn btn-primary">Register</button>
+              <p class="form-footer">
+                Already have an account? <a href="login.html">Login here</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 TechSolutions Inc. All rights reserved.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2025 Center NIT. All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="js/validation.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
