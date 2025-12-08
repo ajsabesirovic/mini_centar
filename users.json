@@ -1,0 +1,23 @@
+{
+    "ajsa@gmail.com": {
+        "name": "Ajsa Besirovic",
+        "email": "ajsa@gmail.com",
+        "password_hash": "$2y$10$6Y0uCrBxX5dQDU0s23GxmeZLYTfzhvI\/Yb18HQmcIQm5NJ3d25GNq",
+        "tech_language": "rust",
+        "created_at": "2025-12-01T14:12:42+01:00"
+    },
+    "besirovicajsa@gmail.com": {
+        "name": "Test",
+        "email": "besirovicajsa@gmail.com",
+        "password_hash": "$2y$10$V.fl9p\/QwYfHmzNny.OvTuB.wozhmGi\/9Bx1wDRB0WO9doVPQfAbG",
+        "tech_language": "typescript",
+        "created_at": "2025-12-01T14:15:46+01:00"
+    },
+    "ajsa@example.com": {
+        "name": "Ajsa Besirovic",
+        "email": "ajsa@example.com",
+        "password_hash": "$2y$10$\/qSR1mgj5lvTY7\/PNcJ3uODvaTcaUcGiry05yaAJLOnlmJfUw9aQO",
+        "tech_language": "swift",
+        "created_at": "2025-12-01T14:32:52+01:00"
+    }
+}

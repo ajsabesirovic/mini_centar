@@ -263,82 +263,11 @@ function initRegistrationValidation() {
     }
   });
 
-  registerForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const nameValidation = validateName(nameField.value);
-    const emailValidation = validateEmail(emailField.value);
-    const passwordValidation = validatePassword(passwordField.value);
-    const confirmPasswordValidation = validateConfirmPassword(
-      passwordField.value,
-      confirmPasswordField.value
-    );
-    const techLanguageValidation = validateTechLanguage(
-      techLanguageField.value
-    );
-
-    let hasErrors = false;
-
-    if (nameValidation) {
-      showError(nameField, nameError, nameValidation);
-      hasErrors = true;
-    } else {
-      clearError(nameField, nameError);
-    }
-
-    if (emailValidation) {
-      showError(emailField, emailError, emailValidation);
-      hasErrors = true;
-    } else {
-      clearError(emailField, emailError);
-    }
-
-    if (passwordValidation) {
-      showError(passwordField, passwordError, passwordValidation);
-      hasErrors = true;
-    } else {
-      clearError(passwordField, passwordError);
-    }
-
-    if (confirmPasswordValidation) {
-      showError(
-        confirmPasswordField,
-        confirmPasswordError,
-        confirmPasswordValidation
-      );
-      hasErrors = true;
-    } else {
-      clearError(confirmPasswordField, confirmPasswordError);
-    }
-
-    if (techLanguageValidation) {
-      showError(techLanguageField, techLanguageError, techLanguageValidation);
-      hasErrors = true;
-    } else {
-      clearError(techLanguageField, techLanguageError);
-    }
-
-    if (!hasErrors) {
-      const formData = {
-        name: nameField.value.trim(),
-        email: emailField.value.trim(),
-        techLanguage: techLanguageField.value,
-      };
-
-      alert(
-        `Registration successful!\n\nName: ${formData.name}\nEmail: ${
-          formData.email
-        }\nTech Language: ${
-          techLanguageField.options[techLanguageField.selectedIndex].text
-        }`
-      );
-    } else {
-      const firstErrorField = registerForm.querySelector('.error');
-      if (firstErrorField) {
-        firstErrorField.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        firstErrorField.focus();
-      }
-    }
+  // On submit, let the browser and server handle validation and submission.
+  // The above blur/input handlers still provide inline feedback,
+  // but we do NOT block the form from posting to register.php.
+  registerForm.addEventListener('submit', function () {
+    // intentionally empty
   });
 }
 
